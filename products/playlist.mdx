@@ -1,10 +1,10 @@
 ---
 title: "Playlist: Bingeable Audio from Your Article Catalog"
 sidebarTitle: "Playlist"
-description: "Powerbeans Playlist auto-generates embeddable audio playlists from your articles, reaching commuters and multitaskers who never click a text article."
+description: "Powerbeans Playlist auto-generates embeddable audio playlists from your articles, reaching commuters and multitaskers."
 ---
 
-The Powerbeans Playlist widget turns your entire article catalog into a bingeable, on-demand audio experience — automatically. Unlike the per-article Audio Player, Playlist surfaces a curated, continuously playable queue of your content wherever you embed it. This format is purpose-built for the audiences you are not currently reaching: commuters listening on their morning train, multitaskers who never have time to sit and read, and audio-first readers who would rather press play than scroll. Playlist meets them where they are.
+The Powerbeans Playlist widget turns your entire article catalog into a bingeable, on-demand audio experience — automatically. Unlike the per-article Audio Player, Playlist surfaces a continuously playable queue of your content wherever you embed it. This format is purpose-built for the audiences you are not currently reaching: commuters listening on their morning train, multitaskers who never have time to sit and read, and audio-first readers who would rather press play than scroll. Playlist meets them where they are.
 
 <Note>
   Playlist is available from the **Pro plan** onwards. [See plans](/billing/plans) to compare tiers.
@@ -16,30 +16,17 @@ The Powerbeans Playlist widget turns your entire article catalog into a bingeabl
   <Step title="Embed the Playlist Widget">
     Copy and paste the Playlist snippet into your CMS template or any page where you want the widget to appear. The widget loads asynchronously so it never slows down your page.
   </Step>
-  <Step title="Your Articles Are Ingested Automatically">
-    Powerbeans sets up a content ingestion integration with your CMS, or you push articles directly via the API. New content is picked up and processed as it is published.
+  <Step title="Your Content Is Ingested">
+    Powerbeans sets up a content ingestion on your site, or you push articles directly via the API. No manual uploads needed.
   </Step>
   <Step title="AI Audio and Summaries Are Generated">
-    High-quality AI-narrated audio and text summaries are produced for each article — no editorial work required on your end.
+    High-quality AI-narrated audio summaries are produced for each article — no editorial work required on your end.
   </Step>
   <Step title="Articles Are Added to Playlists">
     Processed articles are automatically organized into one or multiple playlists and made immediately available to listeners through the embedded widget.
   </Step>
 </Steps>
 
-## Embed Code
-
-Paste this snippet into your CMS template or page layout:
-
-```html
-<script id="pb-scr">!function(){var t=document.createElement("script");t.src="https://dev.powerbeans-ai.com/powerbeans-playlist-latest.umd.js",document.body.appendChild(t);var q=document.createElement("link");q.rel="stylesheet"; q.href="https://dev.powerbeans-ai.com/powerbeans-playlist-latest.css",document.body.appendChild(q);var r=document.createElement("div");r.id="powerbeans-playlist",r.setAttribute("data-api-key","YOUR_POWERBEANS_TOKEN"),r.setAttribute("data-playlists","YOUR_PLAYLISTS_OR_LEAVE_EMPTY");var a=document.getElementById('pb-scr');a.parentNode.insertBefore(r,a.nextSibling)}();</script>
-```
-
-Replace `YOUR_POWERBEANS_TOKEN` with your account API key.
-
-<Note>
-  The `data-playlists` attribute lets you target one or more specific playlists by ID. Leave it empty and Powerbeans will automatically select the most relevant playlist for that placement.
-</Note>
 
 ## Placement Options
 
@@ -59,12 +46,6 @@ Playlist supports the same Voice Cloning capability as the Audio Player. When en
 Playlist supports video, audio, and display ads — all managed through a seamless **Google MCM** setup with access to **35+ top-tier SSPs**. Powerbeans handles both programmatic and direct ad sales so you retain flexibility over how you monetize your audio inventory.
 
 Learn more in the [Monetization overview](/monetization/overview).
-
-## Reporting
-
-Powerbeans gives you full visibility into how the Playlist widget impacts your business. The reporting dashboard covers detailed engagement metrics, per-article audio performance, and monetization data so you can track what's working and where to improve.
-
-See the [Reporting dashboard](/reporting/dashboard) for more detail.
 
 ## Standards & Compatibility
 

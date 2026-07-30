@@ -1,0 +1,19 @@
+---
+title: "Preventing Layout Shift (CLS) from the Audio Player"
+sidebarTitle: "Preventing Layout Shift"
+description: "Reserve space for the Powerbeans Audio Player ahead of time so it doesn't shift your page layout and hurt your Cumulative Layout Shift (CLS) score."
+---
+
+Because the Audio Player injects itself into the page after your initial layout renders, the surrounding content can shift once it appears — unless you reserve space for it in your CSS ahead of time. Left unhandled, this shows up as a worse Cumulative Layout Shift (CLS) score.
+
+## Reserve a minimum height
+
+Set a `min-height` on the container element the Audio Player mounts into, sized to match whether ads are enabled for that placement:
+
+| Configuration | Minimum height |
+|---|---|
+| Without ads | 90px |
+| With ads | 180px |
+
+Reserving this space ahead of time means the widget fills a slot that's already accounted for in your layout, instead of pushing content around when it loads.
+

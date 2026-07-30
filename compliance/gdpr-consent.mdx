@@ -82,6 +82,12 @@ Powerbeans widgets are built to be IAB TCF-ready. Here is how the consent flow w
   Test your consent flow by opening your site in a private browser window, toggling consent on and off in your CMP banner, and verifying that Powerbeans behaviour changes accordingly. With consent granted you should see ad slots fill; with consent withheld, the player should still load and play audio but without personalised ads.
 </Tip>
 
+Beyond consent signalling, Powerbeans also supports IAB standards for contextual categorisation:
+
+- Support publisher-configured custom vendor IDs where Powerbeans is added manually as a CMP vendor
+- Pass IAB content category signals in ad requests where category data is available
+- Avoid sending category parameters where no content categories are available
+
 ## Cookies on your site
 
 When Powerbeans widgets are embedded in your pages, **your cookie policy governs** the cookies and identifiers used. Here is how the categories break down:

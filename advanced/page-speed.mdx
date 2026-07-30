@@ -1,0 +1,15 @@
+---
+title: "Does Powerbeans Slow Down My Site?"
+sidebarTitle: "Page Speed Impact"
+description: "Why Powerbeans widgets load without slowing down your page or hurting your Core Web Vitals."
+---
+
+A common concern before embedding any third-party widget is whether it will drag down page speed. Powerbeans widgets are built to have no meaningful impact on your page speed or Core Web Vitals.
+
+## Asynchronous loading
+
+Every widget script (Audio Player, Playlist, Text Summaries) loads **asynchronously** — it runs independently of your page's main thread and critical rendering path, so it never blocks or delays your page render.
+
+## CDN delivery and caching
+
+Widget assets are served from a global CDN and **cached in the browser for 30 days** after a reader's first visit, so returning visitors load the widget without a repeat trip to Powerbeans' servers.

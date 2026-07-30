@@ -12,13 +12,6 @@
     "light": "https://media.brand.dev/22c5e3d0-93eb-41df-a854-a1987c092605.png",
     "dark": "https://media.brand.dev/22c5e3d0-93eb-41df-a854-a1987c092605.png"
   },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Book a Demo",
-      "href": "https://calendly.com/matias-pb/mati-30-min-eu"
-    }
-  },
   "navigation": {
     "tabs": [
       {
@@ -28,9 +21,7 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "account-setup",
-              "faq"
+              "quickstart"
             ]
           },
           {
@@ -38,19 +29,7 @@
             "pages": [
               "products/audio-player",
               "products/playlist",
-              "products/text-summaries",
-              "products/languages"
-            ]
-          },
-          {
-            "group": "Implementation",
-            "pages": [
-              "implementation/embed-widgets",
-              "implementation/content-ingestion",
-              "implementation/customization",
-              "implementation/voice-cloning",
-              "implementation/advanced-integration",
-              "implementation/performance"
+              "products/text-summaries"
             ]
           },
           {
@@ -58,14 +37,17 @@
             "pages": [
               "monetization/overview",
               "monetization/ad-formats",
-              "monetization/revenue-share"
+              "monetization/revenue-share",
+              "monetization/free-via-ads",
+              "monetization/payouts"
             ]
           },
           {
-            "group": "Analytics & Reporting",
+            "group": "Other",
             "pages": [
-              "reporting/dashboard",
-              "reporting/metrics"
+              "advanced/languages",
+              "advanced/layout-shift",
+              "advanced/page-speed"
             ]
           },
           {
