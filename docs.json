@@ -29,7 +29,8 @@
             "pages": [
               "introduction",
               "quickstart",
-              "account-setup"
+              "account-setup",
+              "faq"
             ]
           },
           {
@@ -37,7 +38,8 @@
             "pages": [
               "products/audio-player",
               "products/playlist",
-              "products/text-summaries"
+              "products/text-summaries",
+              "products/languages"
             ]
           },
           {
@@ -46,7 +48,9 @@
               "implementation/embed-widgets",
               "implementation/content-ingestion",
               "implementation/customization",
-              "implementation/voice-cloning"
+              "implementation/voice-cloning",
+              "implementation/advanced-integration",
+              "implementation/performance"
             ]
           },
           {
@@ -75,6 +79,7 @@
           {
             "group": "Compliance",
             "pages": [
+              "accessibility",
               "compliance/gdpr-consent",
               "compliance/privacy-policy",
               "compliance/terms"

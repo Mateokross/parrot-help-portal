@@ -7,7 +7,7 @@ description: "Step-by-step instructions to embed the Audio Player, Playlist, and
 Each Powerbeans widget embeds with a single self-contained `<script>` tag — no build tools, no npm packages, no framework dependencies. When a reader loads your page, the script injects the widget into the DOM and authenticates with the Powerbeans platform using your API key. From there, Powerbeans handles content ingestion, audio generation, and delivery automatically.
 
 <Note>
-  Replace `YOUR_POWERBEANS_TOKEN` with your actual API key. You'll find it under **Settings** in the [app.powerbeans.ai](https://app.powerbeans.ai) dashboard.
+  Replace `YOUR_POWERBEANS_TOKEN` with your actual API key. You'll find it inside the implementation guide for the relevant widget in your [app.powerbeans.ai](https://app.powerbeans.ai) dashboard.
 </Note>
 
 ## Widget embed codes
@@ -48,7 +48,7 @@ All Powerbeans widgets are engineered to have zero impact on your Core Web Vital
 
 ## Accessibility
 
-Every Powerbeans widget is accessible by default and passes **WCAG 2.2** compliance. All interactive controls include proper ARIA labels, maintain visible focus states for keyboard navigation, and include screen-reader-friendly playback text throughout. You do not need to make any additional accessibility modifications after embedding.
+The Audio Player and Playlist widgets pass **WCAG 2.2** by default — proper ARIA labels, visible focus states for keyboard navigation, and screen-reader-friendly playback text throughout, with no additional work required after embedding. The Text Summaries widget's accessibility card is not yet live (fixes are pending) — see the [Accessibility overview](/accessibility) for the full breakdown by product.
 
 ## Troubleshooting
 

@@ -4,7 +4,7 @@ sidebarTitle: "Account Setup"
 description: "Create your Powerbeans account, choose a plan, add your site, grab your API key, and invite team members — all before going live."
 ---
 
-Before you embed your first widget, you need a Powerbeans publisher account. Account setup takes a few minutes: you'll create your account, choose a plan, add your site domain(s), and grab your API key. This page also covers how to manage team members and handle multiple sites — everything you need configured before you go live.
+Before you embed your first widget, you need a Powerbeans publisher account. Account setup takes a few minutes: you'll create your account, add your site, preview your instant demo, choose a plan, and get your API key from the relevant widget implementation guide. This page also covers how to manage team members and handle multiple sites — everything you need configured before you go live.
 
 ## Create Your Account
 
@@ -13,29 +13,26 @@ Before you embed your first widget, you need a Powerbeans publisher account. Acc
     Go to [app.powerbeans.ai](https://app.powerbeans.ai) and register with your **business email**, a secure **password**, and your **company name**. Use the email address that will be the primary account owner — you can invite additional team members later.
   </Step>
 
+  <Step title="Add Your Site Domain">
+    Add the domain(s) where you'll embed Powerbeans widgets. A "site" is one website or domain. The number of sites you can register depends on your plan (see the Sites section below).
+  </Step>
+
+  <Step title="Preview Your Instant Demo">
+    Once your site is registered, Powerbeans generates an instant demo showing the products running on your actual content, so you can see real audio, playlists, or summaries on your own articles before committing to a plan.
+  </Step>
+
   <Step title="Choose a Plan">
-    Select the plan that matches your publication's traffic, feature needs, and team size. Powerbeans offers four tiers:
+    Select the plan that matches your publication's traffic, feature needs, and team size. Powerbeans offers four tiers, from Starter through Enterprise, unlocking more products, voices, and sites as you go up.
 
-    | Plan | Price | Summaries/Month | Sites |
-    |------|-------|-----------------|-------|
-    | Starter | $100/month | 500 | 1 |
-    | Pro | $250/month | 1,500 | Up to 5 |
-    | Scale | $500/month | 5,000 | Up to 10 |
-    | Enterprise | From $1,500/month | Unlimited | Unlimited |
-
-    See the full feature breakdown on the [Plans page](/billing/plans). You can upgrade at any time from the dashboard.
+    Pricing changes over time, so **[powerbeans.ai/pricing](https://powerbeans.ai/pricing)** is the source of truth for current plan pricing and features — see [Plans](/billing/plans) for a short summary. You can upgrade at any time from the dashboard.
 
     <Tip>
       Eligible publishers on Scale and Enterprise can use Powerbeans for free through the **Free via Ads** option — your ad revenue goes toward the platform fee first, and once it covers the cost, you pay nothing.
     </Tip>
   </Step>
 
-  <Step title="Add Your Site Domain">
-    After selecting a plan, add the domain(s) where you'll embed Powerbeans widgets. A "site" is one website or domain. The number of sites you can register depends on your plan (see the Sites section below).
-  </Step>
-
-  <Step title="Copy Your API Key">
-    Navigate to **Settings → API Keys** in the dashboard and copy your API key. You'll use this token in every widget snippet you embed on your site. Keep it secret — see the warning below.
+  <Step title="Find Your API Key">
+    Your API key isn't on a standalone settings page — it's shown inside the relevant widget implementation guide in your dashboard (Audio Player, Playlist, or Text Summaries) when you set that product up. Open the implementation guide for the product you're embedding and copy the key from there. Keep it secret — see the warning below.
   </Step>
 </Steps>
 
@@ -43,12 +40,12 @@ Before you embed your first widget, you need a Powerbeans publisher account. Acc
 
 Your API key is the credential that authenticates every Powerbeans widget embedded on your site. Each request the widget makes — audio playback, content ingestion triggers, ad serving — is validated against this key.
 
-**Where to find it:** Dashboard → Settings → API Keys
+**Where to find it:** the widget implementation guide in your dashboard for the product you're embedding (Audio Player, Playlist, or Text Summaries).
 
 **How to use it:** Replace `YOUR_POWERBEANS_TOKEN` in any widget embed snippet with your key.
 
 <Warning>
-  Never commit your API key to version control, paste it into a public config file, or expose it anywhere it could be indexed or scraped. If your key is compromised, anyone could use your quota. On Enterprise plans, you can rotate your API key at any time from the **Settings → API Keys** page in the dashboard.
+  Never commit your API key to version control, paste it into a public config file, or expose it anywhere it could be indexed or scraped. If your key is compromised, anyone could use your quota. Contact your account manager if you need to rotate it.
 </Warning>
 
 ## Team Members

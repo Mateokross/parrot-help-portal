@@ -79,7 +79,7 @@
     "Carousel for continuous hands-free audio playback",
     "Built-in ad monetization via Google MCM and 35+ SSPs",
     "One-line embed — no editorial work required",
-    "WCAG 2.2 accessible and GDPR/IAB TCF compliant",
+    "Audio Player and Playlist are WCAG 2.2 accessible (Text Summaries a11y pending); GDPR/IAB TCF compliant across all products",
     "Full analytics dashboard with engagement and revenue metrics",
     "CMS content ingestion (script, crawl, or API push)"
   ],

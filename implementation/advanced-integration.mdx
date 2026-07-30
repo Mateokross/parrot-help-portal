@@ -1,0 +1,31 @@
+---
+title: "Advanced Integration: Selective Rollout, Tag Managers & Firewalls"
+sidebarTitle: "Advanced Integration"
+description: "Answers for less common integration scenarios: rolling out to specific pages only, deploying via a tag manager or AMP, and allowing Powerbeans through a CDN or firewall."
+---
+
+This page covers integration scenarios beyond the standard script-tag embed described in [Embed Widgets](/implementation/embed-widgets). If your setup needs one of these, start here — for anything CMS- or vendor-specific, your account manager or [support@powerbeans.ai](mailto:support@powerbeans.ai) can walk you through the details for your platform.
+
+## Selective implementation
+
+**"What if I only want audio on some articles, not my whole site?"**
+
+Only add the widget script to the pages you want processed — nothing else is needed. Powerbeans only ingests and generates audio for pages where the script is present, so you can roll out to a single section, a handful of articles, or your entire catalog just by controlling where the snippet is included in your CMS template.
+
+## Deploying via Google Tag Manager or on AMP pages
+
+If your site manages third-party scripts through Google Tag Manager, or you publish AMP versions of your articles, Powerbeans widgets can be deployed through those paths as well. The setup differs from the standard `<script>` embed described in [Embed Widgets](/implementation/embed-widgets) — contact your account manager or [support@powerbeans.ai](mailto:support@powerbeans.ai) for the current GTM tag configuration or AMP-compatible embed for your CMS.
+
+## CDN & firewall / crawler access
+
+Powerbeans needs to be able to reach your article pages to ingest content and generate audio. If your site sits behind a CDN, WAF, or bot-management layer (Cloudflare, Akamai, Fastly, AWS WAF, Imperva, or similar), you may need to allowlist Powerbeans so its content requests aren't blocked as bot traffic.
+
+The exact configuration (crawler user-agent, IP allowlisting, or bypass rule) depends on which CDN or firewall product you use. Contact [support@powerbeans.ai](mailto:support@powerbeans.ai) with the name of your CDN/firewall provider and your account manager will provide the specific allowlist details needed for your setup.
+
+<Note>
+  If audio isn't generating for a new site and your pages sit behind a CDN or firewall, this is one of the first things worth checking — see the troubleshooting section in [Embed Widgets](/implementation/embed-widgets).
+</Note>
+
+## API access (Enterprise)
+
+Enterprise plans include API access for programmatic control over content and audio, including pushing content directly, downloading generated audio files, and triggering regeneration. See [Content Ingestion](/implementation/content-ingestion) for the content-push basics, or contact your account manager for full API reference documentation.
