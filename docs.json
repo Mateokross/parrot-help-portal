@@ -1,10 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "aspen",
   "name": "Powerbeans",
   "colors": {
     "primary": "#1beb54",
-    "light": "#ffffff"
+    "light": "#f7f8f8",
+    "dark": "#08090a"
   },
   "favicon": "/favicon.svg",
   "logo": {
@@ -83,12 +84,19 @@
       }
     ]
   },
-  "fonts": {
-    "heading": {
-      "family": "Red Hat Display"
-    },
-    "body": {
-      "family": "Red Hat Display"
+  "background": {
+    "color": {
+      "dark": "#08090a"
     }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": true
+  },
+  "styling": {
+    "codeblocks": "system"
   }
 }
