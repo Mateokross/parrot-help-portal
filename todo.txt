@@ -1,21 +1,16 @@
-SHOULD
 Integration guide for each product
 One for each product and feature
+playlist sections explained
 Max characters to be processed per article
 funcionalidad de generar audio >x views
 
 Questions we need to answer
-Why summaries? 
+Why summaries? - de forma mas clara en la pagina del player
 What happens when a site hits its maximum operational limit for character processing or user views?
 Can we run the audio player entirely behind an active digital subscription or registration wall?
 What technical dependencies are required to serve direct audio campaigns inside our non-paid Google Ad Manager environment?
-What if I only want to generate audio for some of my articles? Simply add the code from the widget Implementation section only to the pages where you want audio content generated.
-que pasa cuando hay muchas voces seleccionadas. 
 How do we serve ads for some users but not for others?
 
-
-
-Check each product, monetization and prepare potential questions
 
 
 NOT FOR NOW
