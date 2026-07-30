@@ -1,47 +1,58 @@
 ---
-title: "Quickstart"
-description: "Begin with a guide on the fastest path to a successful outcome"
+title: "Quickstart: Go Live with AI Audio on Your Articles"
+sidebarTitle: "Quickstart"
+description: "Add AI-narrated audio to your articles in three steps: create your account, embed the widget script, and let Powerbeans handle the rest."
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
-
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
-
-## Prerequisites
-
-Before you begin, you must have:
-
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
-
-## Get started
+This guide walks you through everything you need to go from zero to live AI audio on your articles. By the end, you'll have the Audio Player widget embedded in your CMS, your API key configured, and Powerbeans actively ingesting and narrating your content — no editorial work required.
 
 <Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
+  <Step title="Create Your Account">
+    Go to [app.powerbeans.ai](https://app.powerbeans.ai) and sign up with your business email, a password, and your company name. Once registered, choose the plan that fits your publication's size and feature needs.
 
-    ```bash
-    npm install your-package
-    ```
+    <Tip>
+      Not sure which plan to pick? See the full comparison on the [Plans page](/billing/plans). You can upgrade at any time as your traffic or feature needs grow.
+    </Tip>
   </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
 
-    ```bash
-    your-cli init
-    ```
+  <Step title="Get Your API Key">
+    After signing in, open **Settings → API Keys** in the dashboard. Your API key is the unique token that authenticates every widget embed on your site — copy it and store it somewhere secure.
+
+    <Warning>
+      Your API key is sensitive. Never paste it into a public repository, client-side config file, or anywhere it could be exposed to the public. Treat it like a password.
+    </Warning>
   </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
 
-    ```bash
-    your-cli start
+  <Step title="Embed the Audio Player">
+    Paste the following snippet into your CMS article template, replacing `YOUR_POWERBEANS_TOKEN` with the API key you copied in the previous step. Add it once to the template and every article gets the player automatically.
+
+    ```html
+    <script id="pb-scr">!function(){var t=document.createElement("script");t.src="https://dev.powerbeans-ai.com/powerbeans-widget-latest.js",document.body.appendChild(t);var r=document.createElement("div");r.id="powerbeans-widget",r.setAttribute("apiKey","YOUR_POWERBEANS_TOKEN");var a=document.getElementById('pb-scr');a.parentNode.insertBefore(r,a.nextSibling)}();</script>
     ```
+
+    The widget loads asynchronously from a CDN and is cached in the browser for 30 days, so it adds zero perceptible delay to your page load.
+  </Step>
+
+  <Step title="Go Live">
+    Once the widget is live, Powerbeans begins ingesting your content automatically via your CMS integration or the API. High-quality AI audio is generated for each article and published directly on your site — no approval steps, no recording sessions, no waiting.
+
+    Your Powerbeans dashboard will show ingestion status, audio performance, and monetization metrics as soon as content starts flowing.
   </Step>
 </Steps>
 
-<Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
+<Note>
+  Full-length article audio counts as **5 summaries** against your monthly quota. For example, on the Starter plan (500 summaries/month), generating full-length audio for 100 articles uses your entire monthly allowance. Summary-length audio counts as 1. You can monitor usage in the dashboard at any time — generation pauses automatically if the limit is reached.
+</Note>
 
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
-</Tip>
+## Next Steps
+
+Now that you're live, explore how to customize the widget's appearance, configure content ingestion rules, and unlock more products.
+
+<CardGroup cols={2}>
+  <Card title="Embed Widgets" icon="code" href="/implementation/embed-widgets">
+    Learn how to configure and customize each widget — Audio Player, Playlist, and Text Summaries — for your CMS.
+  </Card>
+  <Card title="Content Ingestion" icon="rss" href="/implementation/content-ingestion">
+    Set up your CMS integration or configure the API to control which articles Powerbeans ingests and when.
+  </Card>
+</CardGroup>

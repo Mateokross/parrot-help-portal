@@ -1,0 +1,93 @@
+---
+title: "Audio Player: AI-Narrated Audio for Any Article"
+sidebarTitle: "Audio Player"
+description: "The Powerbeans Audio Player adds AI-narrated audio to every article automatically. No editorial work — 85% of started audios are completed by listeners."
+---
+
+The Powerbeans Audio Player transforms every article on your site into high-quality, AI-narrated audio — fully automatically, with no editorial effort required. Once the widget is embedded, Powerbeans ingests your content and generates audio for each piece, giving your audience a hands-free way to consume your journalism. The results speak for themselves: **85% of audios that are started are completed**, making it one of the most engaging formats you can add to your site.
+
+## Key Stats
+
+<CardGroup cols={2}>
+  <Card title="+155%" icon="arrow-trend-up">
+    Average increase in time on site
+  </Card>
+  <Card title="-33%" icon="arrow-trend-down">
+    Reduction in bounce rate
+  </Card>
+  <Card title="+45%" icon="newspaper">
+    More articles read per session
+  </Card>
+  <Card title="+50%" icon="chart-bar">
+    CTR vs. competitor players
+  </Card>
+</CardGroup>
+
+## How It Works
+
+<Steps>
+  <Step title="Embed the Widget">
+    Paste the Audio Player snippet into your CMS template. The widget loads asynchronously and appears on every article page automatically.
+  </Step>
+  <Step title="Content Is Ingested">
+    Powerbeans sets up a content ingestion integration with your CMS, or you push articles directly via the API. No manual uploads needed.
+  </Step>
+  <Step title="Audio Is Generated Automatically">
+    High-quality AI audio is produced for each article and published without any editorial intervention. New articles are processed as they are published.
+  </Step>
+</Steps>
+
+## Carousel
+
+The Carousel feature enables continuous audio playback across articles — when one piece finishes, the next queued article starts playing automatically. This lets your listeners consume content hands-free while commuting, exercising, or doing chores, without ever returning to their screen.
+
+Carousel drives deeper sessions: publishers using it see an average session duration of **2.5 minutes** — well above typical audio engagement benchmarks.
+
+## Voice Cloning
+
+Voice Cloning replicates each writer's unique voice, so articles are narrated by the actual author rather than a generic AI voice. This adds authenticity and a personal connection that generic text-to-speech cannot replicate. Publishers who enable Voice Cloning see **2–3× increased usage** for articles read by the author's own voice.
+
+<Note>
+  Voice Cloning is available from the **Scale plan** onwards. [See plans](/billing/plans) to find out which tier is right for you.
+</Note>
+
+## Customization
+
+You can tailor the Audio Player to match your site's identity and editorial needs. Adjustable settings include:
+
+- **Content type** — summaries, full-length audio, or both
+- **Voices** — choose from available AI voices or enable Voice Cloning
+- **Advertising** — configure ad placements and formats
+- **Colors** — match your brand's visual style
+- **Texts** — localize labels, CTAs, and UI copy
+
+For a full breakdown of available options, see the [Customization guide](/implementation/customization).
+
+## Monetization
+
+The Audio Player supports audio ads, companion banners, and display formats — all optimized for performance via a seamless **Google MCM** setup. With access to **35+ top-tier SSPs**, Powerbeans supports both programmatic and direct ad sales, giving you flexibility over your revenue strategy.
+
+Learn more in the [Monetization overview](/monetization/overview).
+
+## Reporting
+
+Powerbeans gives you full visibility into how the Audio Player impacts your business. The reporting dashboard covers detailed engagement metrics, per-article audio performance, and monetization data so you can track what's working and where to improve.
+
+See the [Reporting dashboard](/reporting/dashboard) for more detail.
+
+## Standards & Compatibility
+
+- **No page slowdown** — The widget loads asynchronously from a CDN and is cached in the browser for 30 days, so it never delays your page render.
+- **Accessible by default** — Passes WCAG 2.2, with labeled controls, ARIA labels, visible focus states, and screen-reader-friendly playback text throughout.
+- **GDPR-aligned** — Session and interaction data drive playback and analytics. Consent determines what is stored and for how long.
+- **IAB TCF ready** — Works with IAB TCF consent signals from your CMP. Consent status controls what gets stored and how ads are served.
+
+## Quick Embed
+
+Paste this snippet into your CMS template to add the Audio Player to every article:
+
+```html
+<script id="pb-scr">!function(){var t=document.createElement("script");t.src="https://dev.powerbeans-ai.com/powerbeans-widget-latest.js",document.body.appendChild(t);var r=document.createElement("div");r.id="powerbeans-widget",r.setAttribute("apiKey","YOUR_POWERBEANS_TOKEN");var a=document.getElementById('pb-scr');a.parentNode.insertBefore(r,a.nextSibling)}();</script>
+```
+
+Replace `YOUR_POWERBEANS_TOKEN` with your account's API key. For complete setup instructions, including CMS-specific guides and API options, see [Embed Widgets](/implementation/embed-widgets).

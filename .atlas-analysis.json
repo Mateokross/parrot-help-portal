@@ -1,23 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "Powerbeans",
+  "projectDescription": "AI-powered audio and engagement platform that automatically turns publisher articles into narrated audio, playlists, and text summaries — with built-in ad monetization.",
   "theme": "almond",
-  "name": "Powerbeans",
-  "colors": {
-    "primary": "#1beb54",
-    "light": "#ffffff"
-  },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "https://media.brand.dev/22c5e3d0-93eb-41df-a854-a1987c092605.png",
-    "dark": "https://media.brand.dev/22c5e3d0-93eb-41df-a854-a1987c092605.png"
-  },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Book a Demo",
-      "href": "https://calendly.com/matias-pb/mati-30-min-eu"
-    }
-  },
+  "primaryColor": "#1beb54",
+  "lightColor": "#ffffff",
+  "darkColor": null,
   "navigation": {
     "tabs": [
       {
@@ -83,12 +71,28 @@
       }
     ]
   },
-  "fonts": {
-    "heading": {
-      "family": "Red Hat Display"
-    },
-    "body": {
-      "family": "Red Hat Display"
-    }
-  }
+  "keyFeatures": [
+    "AI-narrated audio player with 85% completion rate",
+    "Bingeable audio playlists auto-generated from article catalogs",
+    "AI-generated text summaries boosting page depth by 2×",
+    "Voice cloning per author for 2–3× increased usage",
+    "Carousel for continuous hands-free audio playback",
+    "Built-in ad monetization via Google MCM and 35+ SSPs",
+    "One-line embed — no editorial work required",
+    "WCAG 2.2 accessible and GDPR/IAB TCF compliant",
+    "Full analytics dashboard with engagement and revenue metrics",
+    "CMS content ingestion (script, crawl, or API push)"
+  ],
+  "publicApiSurface": [
+    "Audio Player widget embed (powerbeans-widget-latest.js + #powerbeans-widget div)",
+    "Playlist widget embed (powerbeans-playlist-latest.umd.js + CSS + #powerbeans-playlist div)",
+    "Text Summaries widget embed (#powerbeans-summary div)",
+    "Content ingestion API (push articles to Powerbeans)",
+    "apiKey / data-api-key authentication attribute on embed elements",
+    "data-playlists attribute for playlist targeting",
+    "Analytics dashboard at app.powerbeans.ai",
+    "Pronunciation dictionary configuration",
+    "Custom VAST tag support (Enterprise)",
+    "Audio file downloads (Enterprise)"
+  ]
 }

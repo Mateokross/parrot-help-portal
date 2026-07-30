@@ -1,0 +1,64 @@
+---
+title: "How Powerbeans Ingests Your Article Content for Audio"
+sidebarTitle: "Content Ingestion"
+description: "Choose from automatic crawling, CMS integration, or API push to get your article content into Powerbeans and start generating audio and summaries."
+---
+
+Before Powerbeans can generate audio or text summaries, it needs to read your article content. Depending on your site architecture, how your content is published, and whether articles are publicly accessible, there are three ingestion methods available. Your Powerbeans onboarding team will help you choose and configure the right one during implementation.
+
+<CardGroup cols={3}>
+  <Card title="Automatic Crawl" icon="spider">
+    Powerbeans detects and crawls your article pages automatically via the embed script. No additional setup required. Best choice for most publishers with publicly accessible content.
+  </Card>
+  <Card title="CMS Integration" icon="plug">
+    Powerbeans connects directly to your CMS and pulls new articles as they're published. Ideal for publishers who want real-time ingestion without any manual steps.
+  </Card>
+  <Card title="API Push" icon="cloud-arrow-up">
+    Enterprise plan only. Push articles directly to Powerbeans via the content ingestion API. The right choice for paywalled content, dynamically generated pages, or complex publishing workflows.
+  </Card>
+</CardGroup>
+
+## Automatic Crawl
+
+Automatic crawling is the simplest ingestion method and requires no configuration beyond the embed script. Once your widget is live, Powerbeans detects article URLs and crawls the page content automatically.
+
+- **Public access required**: Your article pages must be publicly accessible. Pages behind a login, paywall, or IP restriction cannot be crawled.
+- **Crawl is triggered by the embed**: The first time Powerbeans sees a new article URL through the widget, it queues that page for crawling and audio generation.
+- **Notify us of major site changes**: If you restructure your site, change your URL patterns, or significantly alter your page templates, contact your account manager or email [support@powerbeans.ai](mailto:support@powerbeans.ai) so we can update the crawl configuration.
+
+<Tip>
+  For the most accurate content extraction, ensure your article body is wrapped in a semantic `<article>` or `<main>` HTML element. This helps Powerbeans correctly isolate the article text from navigation, footers, and sidebar content.
+</Tip>
+
+## CMS Integration
+
+CMS integration establishes a direct connection between your content management system and Powerbeans, so new articles are ingested and queued for audio generation the moment they're published.
+
+Your Powerbeans onboarding team configures CMS integration during implementation — you won't need to set this up yourself. Powerbeans supports custom CMS setups, headless architectures, and proprietary platforms. If you're unsure whether your stack is supported, reach out to [support@powerbeans.ai](mailto:support@powerbeans.ai) to discuss your setup before onboarding begins.
+
+## API Push
+
+<Note>
+  API Push is available on the **Enterprise plan** only.
+</Note>
+
+The API Push method lets you send article content directly to Powerbeans via an HTTP API, giving you full control over what gets ingested and when. This is the recommended approach for:
+
+- **Paywalled or subscriber-only content** that the crawler cannot access
+- **Dynamically generated pages** assembled client-side after the initial page load
+- **Complex multi-site or multi-brand setups** where crawling across domains isn't practical
+
+To get started with API Push, contact your Powerbeans account manager. They'll provide your API credentials and the full endpoint documentation specific to your integration.
+
+## Content requirements
+
+To ensure the best quality audio and summaries, your article content should meet the following criteria:
+
+- **HTML with a clear structure**: Articles must be served as HTML with a recognizable `<title>` and a distinct body. Plain text or PDF formats are not supported for automatic ingestion.
+- **Crawler not blocked in `robots.txt`**: Ensure that Powerbeans' crawler is not disallowed in your `robots.txt` file. If you're unsure of the correct crawler user-agent to allowlist, contact [support@powerbeans.ai](mailto:support@powerbeans.ai).
+- **Notify Powerbeans of structural changes**: Major URL restructures, template overhauls, or CMS migrations can interrupt ingestion. Always give Powerbeans advance notice so continuity is maintained.
+- **Sufficient article length**: Very short articles (under ~100 words) may produce lower-quality summaries or audio. Standard-length news and editorial articles work best.
+
+<Note>
+  Content ingestion is configured during your onboarding. If you need to switch ingestion methods after going live — for example, moving from automatic crawl to CMS integration — contact [support@powerbeans.ai](mailto:support@powerbeans.ai) and your account manager will coordinate the change.
+</Note>

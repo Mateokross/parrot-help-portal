@@ -1,0 +1,81 @@
+---
+title: "Text Summaries: AI Article Overviews That Drive Depth"
+sidebarTitle: "Text Summaries"
+description: "Powerbeans Text Summaries deliver AI-generated article overviews that motivate readers — 81% find them useful and users explore 2× more pages per session."
+---
+
+The Powerbeans Text Summaries widget adds AI-generated article overviews to your pages automatically, giving readers an instant snapshot of what an article covers before they commit to reading it in full. Rather than replacing the article, summaries act as a motivational gateway — readers who see a well-crafted overview are significantly more likely to continue into the full piece. The engagement data is clear: **81% of readers find summaries useful**, and users who interact with them explore **2× more pages per session** compared to those who don't.
+
+<Note>
+  Text Summaries are available from the **Scale plan** onwards. [See plans](/billing/plans) to compare tiers.
+</Note>
+
+## Reader Impact
+
+<CardGroup cols={3}>
+  <Card title="74%" icon="book-open">
+    Said summaries motivated them to read the full article
+  </Card>
+  <Card title="81%" icon="thumbs-up">
+    Find summaries useful
+  </Card>
+  <Card title="2×" icon="chart-line">
+    More pages explored per session
+  </Card>
+</CardGroup>
+
+## How It Works
+
+<Steps>
+  <Step title="Embed the Summaries Widget">
+    Paste the Text Summaries snippet into your CMS template. The widget loads asynchronously and renders on every article page automatically.
+  </Step>
+  <Step title="Your Content Is Ingested">
+    Powerbeans sets up a content ingestion integration with your CMS, or you send articles directly via the API. New content is processed as it is published.
+  </Step>
+  <Step title="AI Summaries Are Generated Automatically">
+    Powerbeans generates a concise, high-quality summary for each article and publishes it through the widget — no editorial input required.
+  </Step>
+</Steps>
+
+## Embed Code
+
+Paste this snippet into your CMS template to add Text Summaries to every article:
+
+```html
+<script id="pb-scr">!function(){var t=document.createElement("script");t.src="https://dev.powerbeans-ai.com/powerbeans-widget-latest.js",document.body.appendChild(t);var r=document.createElement("div");r.id="powerbeans-summary",r.setAttribute("apiKey","YOUR_POWERBEANS_TOKEN");var a=document.getElementById('pb-scr');a.parentNode.insertBefore(r,a.nextSibling)}();</script>
+```
+
+Replace `YOUR_POWERBEANS_TOKEN` with your account API key.
+
+## Customization
+
+You can tailor Text Summaries to match your site's look and feel. Adjustable settings include:
+
+- **Colors** — align the widget's visual style with your brand
+- **Texts** — customize labels, headings, and UI copy
+- **Advertising** — configure ad placements and formats within the widget
+
+For the full list of options, see the [Customization guide](/implementation/customization).
+
+## Monetization
+
+Text Summaries support display ad formats optimized for performance via a seamless **Google MCM** setup, with access to **35+ top-tier SSPs**. Powerbeans supports both programmatic and direct ad sales, giving you control over how you monetize the additional engagement summaries generate.
+
+Learn more in the [Monetization overview](/monetization/overview).
+
+## Reporting
+
+Powerbeans gives you full visibility into how Text Summaries impact your business. The reporting dashboard covers detailed engagement metrics, per-article summary performance, and monetization data so you can track what's working and where to improve.
+
+See the [Reporting dashboard](/reporting/dashboard) for more detail.
+
+<Warning>
+  AI-generated summaries may occasionally contain inaccuracies or misrepresent the nuance of a source article. You are responsible for the editorial review of summaries before they go live on your site.
+</Warning>
+
+## Standards & Compatibility
+
+- **No page slowdown** — Loaded asynchronously from a CDN and cached in the browser for 30 days, so it never delays your page render.
+- **GDPR-aligned** — Analytics and core product behavior run on session data. Consent determines which features run and what, if anything, is stored beyond the session.
+- **IAB TCF ready** — Works with IAB TCF consent signals from your CMP. Consent determines which ad and content features are active.

@@ -1,0 +1,114 @@
+---
+title: "Publisher GDPR & Consent Guide for Powerbeans Sites"
+sidebarTitle: "GDPR & Consent"
+description: "Understand your responsibilities as a publisher using Powerbeans — how to handle consent, configure your CMP, implement IAB TCF, and stay GDPR-compliant."
+---
+
+As a publisher using Powerbeans, you are the **data controller** for your end users — meaning the legal responsibility for how their personal data is collected and used on your site sits with you. Powerbeans acts as your data processor, handling data only on your instructions and under the terms of the Data Processing Agreement (DPA). This page explains what that means in practice and what you need to configure to stay compliant.
+
+## Your role
+
+Understanding the controller/processor split is the foundation of your GDPR obligations when deploying Powerbeans on your site.
+
+<CardGroup cols={2}>
+  <Card title="You are the data controller" icon="user-shield">
+    You determine the purposes and means of processing your readers' personal data. This includes deciding which Powerbeans features to enable and ensuring you have a lawful basis for each one.
+  </Card>
+  <Card title="Powerbeans is your data processor" icon="server">
+    Powerbeans processes personal data only on your behalf and under your instructions, governed by the DPA incorporated into the Terms and Conditions.
+  </Card>
+</CardGroup>
+
+**What Powerbeans does and does not collect from your readers:**
+
+- ✅ Pseudonymous identifiers (cookie/consent-dependent)
+- ✅ Device and browser information
+- ✅ Playback and engagement events
+- ✅ General location derived from IP address (not stored as PII)
+- ❌ Names, email addresses, phone numbers, or postal addresses — **never collected from end users by design**
+
+## What you need to configure
+
+Follow these steps to ensure your Powerbeans integration is GDPR-compliant from day one.
+
+<Steps>
+  <Step title="Implement a CMP">
+    Set up a Consent Management Platform (CMP) on your site that complies with the IAB TCF (Transparency and Consent Framework). Your CMP is the mechanism through which you collect, record, and pass consent signals to Powerbeans and other vendors. Without a compliant CMP in place, you cannot lawfully enable consent-dependent features such as ad personalisation and tracking.
+  </Step>
+  <Step title="Update your privacy notice and cookie policy">
+    Disclose that you use Powerbeans technology in your site's privacy policy and cookie policy. You must describe the audio playback, analytics, advertising, and any third-party demand or measurement partners that operate through Powerbeans widgets on your properties. Readers have a right to know, and regulators expect this.
+  </Step>
+  <Step title="Configure consent signals">
+    Ensure your CMP passes valid IAB TCF consent strings that Powerbeans can read. Powerbeans widgets are consent-aware: when a valid consent signal is present, ad personalisation and consent-dependent identifiers activate. When no signal is present or consent is withheld, only essential playback functions run.
+  </Step>
+  <Step title="Don't block Powerbeans in cookie-less mode">
+    Core playback functionality works without consent — readers can still listen to articles. Ad personalisation and tracking require it. Make sure your CMP or firewall rules do not block the Powerbeans script entirely in a no-consent state, or you will prevent basic audio from loading for all users.
+  </Step>
+</Steps>
+
+## What Powerbeans collects from your readers
+
+When the Powerbeans widget runs on your site, the following categories of data may be processed on your behalf:
+
+<AccordionGroup>
+  <Accordion title="Pseudonymous online identifiers">
+    Cookie and consent-dependent identifiers used for playback continuity, engagement measurement, and ad delivery. These are only set and read where your CMP passes a valid consent signal — or where strictly necessary for playback.
+  </Accordion>
+  <Accordion title="Device and browser information">
+    Technical signals such as device type, browser name and version, operating system, and screen size. Used to deliver the correct player experience and to diagnose playback issues.
+  </Accordion>
+  <Accordion title="Playback and engagement events">
+    Events such as play, pause, completion, skip, and article interactions. These power your Powerbeans analytics dashboard and, where enabled, ad measurement.
+  </Accordion>
+  <Accordion title="General location from IP address">
+    Country and region-level location derived from the reader's IP address. Used for ad targeting eligibility and analytics breakdowns. IP addresses themselves are not stored as personally identifiable information.
+  </Accordion>
+  <Accordion title="What is never collected">
+    Powerbeans does not collect names, email addresses, phone numbers, postal addresses, or any other directly identifying information from your end users through the Services — this is a deliberate design decision, not just a policy.
+  </Accordion>
+</AccordionGroup>
+
+## IAB TCF compliance
+
+Powerbeans widgets are built to be IAB TCF-ready. Here is how the consent flow works in practice:
+
+| Consent state | What activates |
+|---|---|
+| Valid consent signal received | Ad personalisation, consent-dependent identifiers, full analytics |
+| No consent / consent withheld | Essential playback only — no consent-dependent identifiers or personalised ads |
+| Partial consent | Only the specific purposes consented to are activated |
+
+<Tip>
+  Test your consent flow by opening your site in a private browser window, toggling consent on and off in your CMP banner, and verifying that Powerbeans behaviour changes accordingly. With consent granted you should see ad slots fill; with consent withheld, the player should still load and play audio but without personalised ads.
+</Tip>
+
+## Cookies on your site
+
+When Powerbeans widgets are embedded in your pages, **your cookie policy governs** the cookies and identifiers used. Here is how the categories break down:
+
+| Cookie category | Requires consent? | What it covers |
+|---|---|---|
+| Strictly necessary | No | Core playback functionality, player initialisation |
+| Analytics | Yes | Engagement and playback metrics |
+| Advertising | Yes | Ad delivery, measurement, personalisation |
+
+Readers who want to exercise their privacy rights in relation to data processed by Powerbeans on your site should contact **you** — the publisher — as the data controller. If you receive such a request, Powerbeans will assist you in fulfilling it under the terms of the DPA.
+
+<Note>
+  **Data Processing Agreement (DPA):** By using Powerbeans you accept the DPA, which is incorporated into the Terms and Conditions. The DPA governs all processing of personal data carried out by Powerbeans on your behalf. It sets out subprocessors, international transfer safeguards, security measures, and your rights as controller. To review the DPA or request amendments, contact [legal@powerbeans.ai](mailto:legal@powerbeans.ai).
+</Note>
+
+## Breach notification
+
+If Powerbeans detects a personal data breach affecting your readers' data, you will be notified within **72 hours** of Powerbeans becoming aware of it. The notification will include, to the extent known:
+
+- The nature of the breach
+- The categories and approximate number of data subjects and records affected
+- The likely consequences
+- The measures taken or proposed to address the breach
+
+You, as the data controller, are then responsible for determining whether and how to notify your supervisory authority and affected data subjects, as required by UK GDPR or EU GDPR.
+
+---
+
+For a summary of Powerbeans' privacy practices and data retention schedules, see the [Privacy Policy](/compliance/privacy-policy) page.
