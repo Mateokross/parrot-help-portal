@@ -7,7 +7,7 @@
     "light": "#f7f8f8",
     "dark": "#08090a"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "logo": {
     "light": "https://media.brand.dev/22c5e3d0-93eb-41df-a854-a1987c092605.png",
     "dark": "https://media.brand.dev/22c5e3d0-93eb-41df-a854-a1987c092605.png"
@@ -43,14 +43,6 @@
             ]
           },
           {
-            "group": "Other",
-            "pages": [
-              "advanced/languages",
-              "advanced/layout-shift",
-              "advanced/page-speed"
-            ]
-          },
-          {
             "group": "Plans & Billing",
             "pages": [
               "billing/plans",
@@ -65,6 +57,14 @@
               "compliance/gdpr-consent",
               "compliance/privacy-policy",
               "compliance/terms"
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": [
+              "advanced/languages",
+              "advanced/layout-shift",
+              "advanced/page-speed"
             ]
           }
         ]
