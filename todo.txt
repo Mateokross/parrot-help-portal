@@ -3,6 +3,7 @@ One for each product and feature
 playlist sections explained
 Max characters to be processed per article
 funcionalidad de generar audio >x views
+scraping
 
 Questions we need to answer
 Why summaries? - de forma mas clara en la pagina del player
@@ -10,6 +11,19 @@ What happens when a site hits its maximum operational limit for character proces
 Can we run the audio player entirely behind an active digital subscription or registration wall?
 What technical dependencies are required to serve direct audio campaigns inside our non-paid Google Ad Manager environment?
 How do we serve ads for some users but not for others?
+
+Ad specs - parked until we have every product, then add to monetization/ad-formats.mdx
+Audio Player display banner (width x height, px), confirmed:
+- Desktop: 728x90, 468x60, 320x50, 300x50, 300x75, 234x60
+- Tablet: 468x60, 320x50, 300x50, 300x75, 234x60
+- Mobile (screens under 480px wide): 320x50, 300x50, 300x75, 234x60
+- 300x250 is an optional add-on, not a default
+- Open question: live configs give tablets the desktop sizes (any screen 480px+), so tablets can get 728x90. Intended?
+- Companion banners (during audio ads): any size up to 728x90 that fits the player's width (from the player code, v0.7.17)
+Still missing:
+- Playlist display sizes
+- Text Summaries display sizes
+- Audio ad lengths. The onboarding template says pre-roll max 15s and post-roll 10-60s. Confirm these.
 
 
 
