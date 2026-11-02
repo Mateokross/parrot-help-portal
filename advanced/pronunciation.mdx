@@ -1,0 +1,57 @@
+---
+title: "Pronunciation: How Powerbeans Reads Names, Numbers, and Dates"
+sidebarTitle: "Pronunciation"
+description: "How Powerbeans adapts article text before narration so numbers, prices, and dates sound natural, and how the pronunciation dictionary handles names, brands, and places."
+---
+
+Even the best AI voices stumble on raw article text. `$4.5M` can get read as a string of characters, `Dr.` could become "dee are", and `3/4` is anyone's guess. Powerbeans pairs the most natural voices available with an optimization layer that rewrites text, so your articles sound like they were read by a person rather than parsed by a machine.
+
+This happens in two stages: an automatic pass that works from your very first article, and a pronunciation dictionary you control.
+
+## The Optimization Layer
+
+Before narration, every article is adapted so that numbers, prices, dates, abbreviations, and symbols are read the way a person would say them. This is on by default, requires no configuration, and applies to every audio on every plan.
+
+| Written | Read aloud |
+| --- | --- |
+| `Dr. Smith` | Doctor Smith |
+| `$4.5M` | four point five million dollars |
+| `on 3/4` (US) | on March fourth |
+| `on 3/4` (UK) | on the third of April |
+
+Date formats follow the conventions of the article's language and region, so the same digits are read correctly for a US and a UK audience. 
+
+Adaptation is contextual, so `3/4` can be read as three fourths if it refers to fractions and not a date. 
+
+This layer fixes the mispronunciations that affect most publishers, so common cases are handled for you without anyone having to report them.
+
+## The Pronunciation Dictionary
+
+Some words can only be settled by you — a columnist's surname, a local place name, a brand with an unusual reading, an acronym your newsroom says as a word rather than letter by letter. Each dictionary entry pairs the word as written with how it should be read, for a given language.
+
+| Word | Read as | Language | Type |
+| --- | --- | --- | --- |
+| Siobhan | Shivawn | English | Columnist |
+| Leicester | Lester | English | Place |
+| PSOE | pesoe | Spanish | Acronym read as a word |
+| BBVA | be be uve a | Spanish | Acronym spelled out |
+
+Some acronyms are read as words and some letter by letter, and which is which is a newsroom convention rather than something a voice can infer.
+
+Entries apply to all audio generated for your site from that point on. Audio generated before an entry was added keeps its original narration.
+
+### Adding Entries
+
+Adding words yourself from the **Pronunciation** page in the platform is coming soon. Until then, email [support@powerbeans.ai](mailto:support@powerbeans.ai) with each word and how it should sound, and the team adds it for you. The Pronunciation page has a prefilled email link for this.
+
+<Note>
+  The Pronunciation Dictionary is available from the **Pro plan** and above. [See plans](/billing/plans) to find out which tier is right for you. The optimization layer is included on every plan.
+</Note>
+
+## Languages and Accents
+
+Powerbeans narrates in **50+ languages and accents**, and the optimization layer follows the conventions of each one. See [Supported Languages](/advanced/languages) for the full list.
+
+## Where It Applies
+
+Pronunciation handling is part of audio generation, so it applies everywhere Powerbeans produces audio — the [Audio Player](/products/audio-player) and the [Playlist](/products/playlist) alike, for both summary and full-length narration.

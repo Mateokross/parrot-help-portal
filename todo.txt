@@ -1,16 +1,36 @@
-Integration guide for each product
-One for each product and feature
-playlist sections explained
+DONE (Nov 2026, from the Oct site changes)
+playlist sections explained -> products/playlist.mdx "How Playlists Are Built"
+Why summaries? -> products/audio-player.mdx "Summaries or Full Articles"
+Can we run the audio player entirely behind a subscription or registration wall? -> yes, products/audio-player.mdx "Gated Audio"
+How do we serve ads for some users but not for others? -> monetization/overview.mdx "Hiding Ads from Subscribers" (flag on the Player; steps live in the platform)
+Pronunciation -> products/pronunciation.mdx (optimization layer + dictionary)
+
+Integration guides
+The platform has the current guides. The ones on powerbeans.ai/guides are legacy.
+Do NOT duplicate them here. quickstart.mdx points at the platform and carries only the
+two publisher-side prerequisites (publication date, warn us about layout changes).
+TODO: review the Powerbeans platform repo and decide what the portal hosts vs links,
+      same for crawler/CDN access.
+
+Still open
+One page for each product and feature
+Player texts (localize labels, CTAs, in-widget copy) - was commented out in products/audio-player.mdx, document when it ships
 Max characters to be processed per article
 funcionalidad de generar audio >x views
 scraping
-
-Questions we need to answer
-Why summaries? - de forma mas clara en la pagina del player
-What happens when a site hits its maximum operational limit for character processing or user views?
-Can we run the audio player entirely behind an active digital subscription or registration wall?
 What technical dependencies are required to serve direct audio campaigns inside our non-paid Google Ad Manager environment?
-How do we serve ads for some users but not for others?
+
+Needs a decision
+Pageviews without monetization: the per-tier numbers (1M/10M/20M) stay on the website.
+Open question is whether billing/faq.mdx documents what happens when a site hits that
+ceiling, with no numbers. Not written yet.
+
+IA restructure proposed: a shared Audio group (how audio is generated, voices & cloning,
+pronunciation, languages) so Player and Playlist stop repeating each other.
+products/pronunciation.mdx sits under Products for now and would move there.
+
+sources/site/powerbeans.ai/*.md are from 30 July 2026 and predate the Oct site changes.
+Delete or regenerate before anything is written from them.
 
 Ad specs - parked until we have every product, then add to monetization/ad-formats.mdx
 Audio Player display banner (width x height, px), confirmed:
@@ -24,7 +44,6 @@ Still missing:
 - Playlist display sizes
 - Text Summaries display sizes
 - Audio ad lengths. The onboarding template says pre-roll max 15s and post-roll 10-60s. Confirm these.
-
 
 
 NOT FOR NOW

@@ -27,6 +27,7 @@
           {
             "group": "Products",
             "pages": [
+              "products/platform",
               "products/audio-player",
               "products/playlist",
               "products/text-summaries"
@@ -62,6 +63,7 @@
           {
             "group": "Other",
             "pages": [
+              "advanced/pronunciation",
               "advanced/languages",
               "advanced/layout-shift",
               "advanced/page-speed"
