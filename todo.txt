@@ -5,6 +5,19 @@ Can we run the audio player entirely behind a subscription or registration wall?
 How do we serve ads for some users but not for others? -> monetization/overview.mdx "Hiding Ads from Subscribers" (flag on the Player; steps live in the platform)
 Pronunciation -> products/pronunciation.mdx (optimization layer + dictionary)
 
+DONE (Nov 2026, Carousel copy + Nov benchmarks, matches parrot-site 8db8375)
+audio-player.mdx: summaries metric (5.3x clicks on play, 3.5x fully listened per session),
+  Carousel description + metric (2.9x fully listened per session, +71% CTR), how the next
+  article is picked, new-visitor hint (+6.7% listen sessions, frequency cap), voice cloning
+add-ons.mdx: voice cloning wording
+sources/site/powerbeans.ai/ deleted - stale 30 July mirror; git history has it
+Decided: the 85% completion claim STAYS on audio-player.mdx and introduction.mdx. The Nov
+  benchmarks measured 60% simple average, 66% weighted by renders, 80% at the best site,
+  but the homepage and Powerbeans.md still say 85%, so the portal stays in step with the
+  site. Revisit here if the site changes it.
+Left alone: Key Stats (+155% / -33% / +45% / +50%) match the site. Measured was
+  +152% session time, -21% bounce, +36% pageviews.
+
 Integration guides
 The platform has the current guides. The ones on powerbeans.ai/guides are legacy.
 Do NOT duplicate them here. quickstart.mdx points at the platform and carries only the
@@ -28,9 +41,6 @@ ceiling, with no numbers. Not written yet.
 IA restructure proposed: a shared Audio group (how audio is generated, voices & cloning,
 pronunciation, languages) so Player and Playlist stop repeating each other.
 products/pronunciation.mdx sits under Products for now and would move there.
-
-sources/site/powerbeans.ai/*.md are from 30 July 2026 and predate the Oct site changes.
-Delete or regenerate before anything is written from them.
 
 Ad specs - parked until we have every product, then add to monetization/ad-formats.mdx
 Audio Player display banner (width x height, px), confirmed:
