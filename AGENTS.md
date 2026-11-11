@@ -31,3 +31,13 @@
 
 {/* Define what should and shouldn't be documented */}
 {/* Example: Don't document internal admin features */}
+
+
+## Reviewing copy changes
+
+For copy changes in 4 or more places, review them in an artifact before editing any file. For fewer, show old vs new in the chat.
+
+- Draft with the `natural-writing` skill, in English and Spanish.
+- One card per place: page and section, message key or `file:line`, old vs new side by side per language, removed words in red and added words in green.
+- Agree on the wording for one place first, then carry it to the rest.
+- Edit files only after approval. The "before" text quotes the live copy exactly.
