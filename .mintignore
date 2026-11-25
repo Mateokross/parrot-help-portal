@@ -8,3 +8,6 @@ drafts/
 
 # Agent instructions, not documentation
 AGENTS.md
+
+# Scaffolding artifact, superseded by docs.json
+.atlas-analysis.json
